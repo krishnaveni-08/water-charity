@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Monomakh&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    height: 100vh;
+    width: 100%;
+}
+header nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header nav .menus{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .menus .with-options{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header nav .menus .with-options .logo{
+    width: 30%;
+    height: 90%;
+}
+header nav .menus .with-options .logo img{
+    width: 100%;
+    height: 100%;
+}
+header nav .menus .with-options ul{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    gap: 10px;
+}
+header nav .menus .with-options ul li{
+    list-style: none;
+}
+header nav .menus .with-options ul .arrow-one{
+    display: flex;
+    gap: 5px;
+}
+header nav .menus .with-options ul .arrow-two{
+    display: flex;
+    gap: px;
+}
+header nav .menus .with-options ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav .menus .without-options{
+    width: 30%;
+    height: 90%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+header nav .menus .without-options a, p{
+    text-decoration: none;
+    color: black;
+}
+header nav .menus .without-options button{
+    width: 80px;
+    height: 30px;
+    background-color: #FFC907;
+    border: none;
+    border-radius: 5px;
+}
+header nav .menus .without-options button i{
+    color: rgb(119, 168, 229);
+}
+header .banner{
+    width: 100%;
+    height: 90%;
+    background: url("./images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    
+
+}
+header .wrap {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+header .wrap .left-wrap{
+    width: 40%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+header .wrap .left-wrap .heading{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+header .wrap .left-wrap .heading h1{
+    color: white;
+    text-align: center;
+    font-family:  "Lora", serif;
+    font-weight: 400;
+}
+header .wrap .left-wrap .container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+header .wrap .left-wrap .container .button{
+    width: 100%;
+    height: 7%;
+    display: flex;
+}
+header .wrap .left-wrap .container .button button{
+    width: 50%;
+    height: 100%;
+    background-color: #FFC907;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+header .wrap .left-wrap .container .button button:nth-child(2){
+    background-color: white;
+}
+header .wrap .left-wrap .container .choose-box{
+    width: 100%;
+    height: 78%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+}
+header .wrap .left-wrap .container .choose-box .amount-heading{
+    width: 100%;
+    height: 15%;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "poppins";
+    background-color: #F4F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    border-radius: 3px;
+}
+header .wrap .left-wrap .container .choose-box form input[type="radio"]{
+    display: none;
+}
+header .wrap .left-wrap .container .choose-box form .row-one{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+header .wrap .left-wrap .container .choose-box form .row-two{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+header .wrap .left-wrap .container .choose-box form .row-two #amounts{
+    width: 210px;
+    height: 40px;
+}
+
+header .wrap .left-wrap .container .choose-box form .amount{
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 20px; */
+    font-size: 12px;
+    font-weight: 700;
+    border: 2px solid #c5c5c5;
+    color: #4b4a4a;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+    background-color: #E9EAE4;
+}
+
+header .wrap .left-wrap .container .choose-box .yellow-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+header .wrap .left-wrap .container .choose-box button{
+    width: 95%;
+    height: 40px;
+    color: rgb(37, 37, 37);
+    background-color: #FFC907;
+    border-radius: 5px;
+    border: 1px solid #FFC907;
+    font-weight: bold;
+
+}
+header .wrap .left-wrap .container .choose-box .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 10%;
+}
+header .wrap .left-wrap .container .choose-box .links a{
+    color: rgb(84, 80, 80);
+}
+header .wrap .left-wrap .container .choose-box .clickhere{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid #9d9d9d;
+}
+header .wrap .left-wrap .container .choose-box .clickhere p{
+    color: #868181;
+}
+header .wrap .left-wrap .container .choose-box .clickhere a{
+    color: rgb(9, 68, 110);
+}
+header .wrap .left-wrap .container .secure-para p{
+    color: #212020;
+    text-align: center;
+
+
+}
